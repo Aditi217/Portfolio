@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Aditi Upadhyay Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+
+  <link rel="stylesheet" href="css/aos.css">
+
+  <link rel="stylesheet" href="css/ionicons.min.css">
+
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/icomoon.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /*======================================
+//--//-->   ABOUT
+======================================*/
+    body {
+      overflow-x: hidden;
+    }
+
+    #home-section,
+    #about-section {
+      margin: 0;
+      padding: 0;
+    }
+
+    .about-mf .box-shadow-full {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+
+    .about-mf .about-img {
+      margin-bottom: 2rem;
+    }
+
+    .about-mf .about-img img {
+      margin-left: 10px;
+    }
+
+    .skill-mf .progress {
+      /* background-color: #cde1f8; */
+      margin: 0.5rem 0 1.2rem;
+      border-radius: 0;
+      height: 0.7rem;
+    }
+
+    .skill-mf .progress .progress-bar {
+      height: 0.7rem;
+      background-color: #ffbd39;
+    }
+
+    /* Animation styles */
+    #typing-animation {
+      position: relative;
+      font-size: 30px;
+      font-weight: bold;
+      color: rgb(255, 255, 255);
+      overflow: hidden;
+      white-space: nowrap;
+      animation: typing 3s steps(20, end) infinite;
+    }
+
+    #typing-animation:before {
+      content: "";
+      /* position: absolute; */
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background-color: #ccc;
+      animation: typing-cursor 0.5s ease-in-out infinite;
+    }
+
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+
+      to {
+        width: 100%;
+      }
+    }
+
+    @keyframes typing-cursor {
+      from {
+        width: 5px;
+      }
+
+      to {
+        width: 0;
+      }
+    }
+
+    /* project image zoom effect */
+
+    .zoom-effect {
+      overflow: hidden;
+      transition: transform 0.3s ease-out;
+    }
+
+    .zoom-effect:hover {
+      transform: scale(1.1);
+    }
+
+    @media screen and (orientation: portrait) {
+      body {
+        margin-left: 5%;
+        margin-right: 5%;
+
+      }
+
+      .slider-text {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .col-md-6 {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+      }
+
+      .main-img img {
+        width: 50%;
+        /* Adjust the size as needed */
+        margin: 0 auto;
+      }
+
+    }
+  </style>
+
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand " href="index.html">Aditi Upadhyay</a>
+      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+        data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span>
+        Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav nav ml-auto">
+          <li class="nav-item">
+            <a href="#home-section" class="nav-link">
+              <span>Home</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#about-section" class="nav-link">
+              <span>About</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#edu-section" class="nav-link">
+              <span>Education</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills-section" class="nav-link">
+              <span>Skills</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#experiences-section" class="nav-link">
+              <span>Experiences</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects-section" class="nav-link">
+              <span>Projects</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact-section" class="nav-link">
+              <span>Contact</span></a>
+          </li>
+          <!-- <li class="nav-item">
+            <a href="#send-message" class="nav-link">
+              <span>Message me</span></a>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home-section" class="hero">
+    <div class="home-slider owl-carousel">
+      <div class="slider-item">
+        <div class="container">
+          <div class="row d-md-flex no-gutters slider-text align-items-center justify-content-end"
+            data-scrollax-parent="true">
+            <div class="col-md-6 d-flex align-items-center ftco-animate">
+              <div class="text">
+                <span class="subheading">Hello!</span>
+                <h1 class="mb-4 mt-3">I'm
+                  <span>Aditi Upadhyay</span>
+                </h1>
+
+                <!-- Element to contain animated typing -->
+                <span id="typing-animation"></span>
+
+                <script>
+                  // Initialize the typing animation
+                  const typingAnimationElement = document.getElementById('typing-animation');
+
+                  // Create an array of typing text
+                  const typingTexts = ['Frontend Developer     ', 'Frontend Developer     ', 'Javascript Developer    '];
+
+                  // Create a function to display the typing animation for a given text
+                  function playTypingAnimation(text) {
+                    // Loop through each character and add it to the element
+                    for (let i = 0; i < text.length; i++) {
+                      setTimeout(() => {
+                        typingAnimationElement.textContent += text[i];
+                      }, i * 100); // Decreased delay to speed up the typing animation
+                    }
+
+                    // Once the animation is complete, reset the text and start over
+                    setTimeout(() => {
+                      typingAnimationElement.textContent = '';
+                      playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+                    }, text.length * 100); // Adjusted delay accordingly
+                  }
+
+                  // Start the typing animation loop
+                  playTypingAnimation(typingTexts[0]);
+                </script>
+                <br><br>
+
+                <p>
+                  <a href="https://www.linkedin.com/in/aditiup29" class="btn btn-white btn-outline-white py-3 px-4">My
+                    Linkedin</a>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center align-items-center">
+              <div class="main-img img" style="max-width: 100%; height: auto;">
+                <img class="rounded-circle img-fluid" src="images/aditi.jpg" alt="Aditi Upadhyay">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-12 heading-section text-center ftco-animate">
+          <h2 class="mb-4">About</h2>
+          <div class="d-md-flex">
+            <div class="left col-md-6 my-5">
+              <img class="rounded img-fluid" src="images/Dev.jpg" alt="Developer Image">
+            </div>
+            <div class="right col-md-6 lh-1 my-5" style="text-align: justify;">
+              <p>As a Frontend Developer at Global IT Providers, I work with a team of talented and
+                passionate developers to create engaging and user-friendly web applications for various clients. I use
+                my
+                skills in HTML, CSS, JavaScript, React js, and MongoDB to build responsive and dynamic frontend
+                interfaces, and integrate them with backend services and APIs. I am a motivated and curious learner,
+                always eager to explore new frontend technologies and trends.</p>
+              <p class="text-center pt-5">
+                <a href="https://drive.google.com/file/d/1mzCzOvLpU8nphvI_h8gUlSKQZAXYSJn6/view"
+                  class="btn btn-primary py-4 px-5" target="_blank">Download CV</a>
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section ftco-no-pb" id="edu-section">
+    <div class="container">
+      <div class="row justify-content-center pb-5">
+        <div class="col-md-12 heading-section text-center ftco-animate">
+          <h2 class="mb-4 pb-4">Education</h2>
+          <div class="d-flex flex-row justify-content-around flex-wrap">
+            <div class="col-md-4 zoom-effect">
+              <div class="resume-wrap ftco-animate h-5">
+                <span class="date">2021-2024</span>
+                <h3 class="fw-bold">B.Tech</h3>
+                <h3 class="fw-bold">Computer Science and Engineering</h3>
+                <span class="position">Manipal University Jaipur</span>
+                <p class="mt-3">CGPA: 8.07/10</p>
+              </div>
+            </div>
+
+            <div class="col-md-4 zoom-effect">
+              <div class="resume-wrap ftco-animate">
+                <span class="date">2018-2021</span>
+                <h3 class="fw-bold">Diploma</h3>
+                <h3>Computer Science and Engineering</h3>
+                <span class="position">GWP, Ranchi</span>
+                <p class="mt-3">Percentage: 80.38%</p>
+              </div>
+            </div>
+            <div class="col-md-4 zoom-effect">
+              <div class="resume-wrap ftco-animate">
+                <span class="date">2017-2018</span>
+                <h3> Senior Secondary School </h3>
+                <!-- <h3> Class x</h3> -->
+                <span class="position mt-5 pt-5"> R.K Public School, Garhwa</span>
+                <p class="mt-3 pt-3">Percentage: 74%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section ftco-no-pb" id="skills-section">
+    <div class="container">
+      <div class="row justify-content-center pb-5">
+        <div class="col-md-12 heading-section ftco-animate">
+          <h2 class="mb-4 pb-4 text-center">Skills</h2>
+          <div class="d-flex flex-row justify-content-around flex-wrap">
+            <div>
+              <img style="height: 150px;" src="images/html.png" alt="">
+              <p class="text-center pt-3">HTML5</p>
+            </div>
+            <div>
+              <img style="height: 150px;" src="images/css.png" alt="">
+              <p class="text-center pt-3">CSS3</p>
+            </div>
+            <div>
+              <img style="height: 150px;" src="images/js.png" alt="">
+              <p class="text-center pt-3">JavaScript</p>
+            </div>
+            <div>
+              <img style="height: 150px;" src="images/react.png" alt="">
+              <p class="text-center pt-3">React</p>
+            </div>
+            <div>
+              <img style="height: 150px;" src="images/firebase.png" alt="">
+              <p class="text-center pt-3">Firebase</p>
+            </div>
+            <div>
+              <img style="height: 150px;" src="images/java.png" alt="">
+              <p class="text-center pt-3">Java</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section ftco-no-pb" id="experiences-section">
+    <div class="container">
+      <div class="row justify-content-center pb-5">
+        <div class="col-md-12 heading-section ftco-animate">
+          <h2 class="mb-4 pb-4 text-center">Experience</h2>
+          <div class="resume-wrap ftco-animate h-5">
+            <span class="date">Frontend Developer at Global IT Providers, Jaipur</span>
+            <p class="">(Jan2024 - Present)</p>
+          </div>
+          <div class="resume-wrap ftco-animate h-5">
+            <span class="date">Salesforce Developer Virtual Internship</span>
+            <p class="">(May2023 - July2023)</p>
+          </div>
+          <div class="resume-wrap ftco-animate h-5">
+            <span class="date">15 days training in java by Indo Danish Tool Room Jamshedpur </span>
+            <p class="">(Jan2021 - Feb2021)</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section ftco-no-pb" id="projects-section">
+    <div class="container">
+      <div class="row justify-content-center pb-5">
+        <div class="col-md-12 heading-section text-center ftco-animate">
+          <h2 class="mb-4 pb-4">Projects</h2>
+          <div class="d-flex flex-row justify-content-around flex-wrap">
+            <div class="col-md-4 mb-4">
+              <div class="card bg-dark zoom-effect">
+                <img src='images/Screenshot (177).png' class="card-img-top " alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Climate Compass</h5>
+                  <p class="card-text">Designed and developed a Weather Tracker App that provides users with current
+                    weather information, including temperature,
+                    humidity etc for any designated location.</p>
+                  <a href="https://github.com/Aditi217/Climate-Compass.git" target="_blank"
+                    class="btn btn-primary">Github</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+              <div class="card bg-dark zoom-effect">
+                <img src='images/Screenshot (178).png' class="card-img-top  " style="height: 200px;" alt="...">
+                <div class="card-body ">
+                  <h5 class="card-title">Vehicle Parking  System</h5>
+                  <p class="card-text ">The vehicle Parking Management system is a web-based technology that will manage
+                    the records of the incoming and outgoing vehicles in an parking house. </p>
+                  <a href="https://github.com/Aditi217/Vehicle-Parking-Management-System.git" target="_blank"
+                    class="btn btn-primary ">Github</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card bg-dark zoom-effect">
+                <img src='images/Screenshot (179).png' class="card-img-top " style="height: 200px;" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">To Do List</h5>
+                  <p class="card-text">A To-Do List project is a web application for managing tasks efficiently,
+                    allowing users to add, edit, and delete items. It offers a clean, user-friendly interface.</p>
+                  <a href="https://github.com/Aditi217/To-Do.git" target="_blank" class="btn btn-primary">Github</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+    <div class="container">
+      <div class="row justify-content-center mb-5 pb-3">
+        <div class="col-md-7 heading-section text-center ftco-animate">
+          <h2 class="mb-4">Contact</h2>
+          <p>Below are the details to reach out to me!</p>
+        </div>
+      </div>
+
+      <div class="row d-flex contact-info mb-5">
+        <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          <div class="align-self-stretch box p-4 text-center">
+            <div class="icon d-flex align-items-center justify-content-center">
+              <span class="icon-map-signs"></span>
+            </div>
+            <h3 class="mb-4">Address</h3>
+            <p>Jaipur, Rajasthan</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          <div class="align-self-stretch box p-4 text-center">
+            <div class="icon d-flex align-items-center justify-content-center">
+              <span class="icon-phone2"></span>
+            </div>
+            <h3 class="mb-4">Contact Number</h3>
+            <p>
+              <a href="tel://7470695586">+91 620-379-4488</a>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          <div class="align-self-stretch box p-4 text-center">
+            <div class="icon d-flex align-items-center justify-content-center">
+              <span class="icon-paper-plane"></span>
+            </div>
+            <h3 class="mb-4">Email Address</h3>
+            <p>
+              <a href="mailto:devnathanurag7.com">aditiupadhyaya029@gmail.com</a>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          <div class="align-self-stretch box p-4 text-center">
+            <div class="icon d-flex align-items-center justify-content-center">
+              <span class="icon-globe"></span>
+            </div>
+            <h3 class="mb-4">Download Resume</h3>
+            <p>
+              <a href="https://drive.google.com/file/d/1mzCzOvLpU8nphvI_h8gUlSKQZAXYSJn6/view" target="_blank">resumelink</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="container">
+          <br>
+          <br>
+          <div class="row justify-content-center">
+            <div class="col-md-7 ftco-animate text-center">
+              <h2>Have a<span>
+                  Question?
+                </span>
+              </h2>
+              <div class="que" id="send-message">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                  <input type="hidden" name="access_key" value="fc27a851-ccd4-4e10-bd0b-a5f73e0f2aee">
+                  <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
+                    <div class="col-12">
+                      <label for="fullname" class="form-label">Full Name
+                        <span class="text-danger">*</span></label>
+                      <input type="text" class="form-control" id="fullname" name="fullname" value=""
+                        required="required">
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <label for="email" class="form-label">Email
+                        <span class="text-danger">*</span></label>
+                      <div class="input-group">
+                        <span class="input-group-text">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-envelope" viewbox="0 0 16 16">
+                            <path
+                              d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                          </svg>
+                        </span>
+                        <input type="email" class="form-control" id="email" name="email" value="" required="required">
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <label for="phone" class="form-label">Phone Number</label>
+                      <div class="input-group">
+                        <span class="input-group-text">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-telephone" viewbox="0 0 16 16">
+                            <path
+                              d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                          </svg>
+                        </span>
+                        <input type="tel" class="form-control" id="phone" name="phone" value="">
+                      </div>
+                    </div><br>
+                    <div class="col-12">
+                      <label for="subject" class="form-label">Subject
+                        <span class="text-danger">*</span></label>
+                      <input type="text" class="form-control" id="subject" name="subject" value="" required="required">
+                    </div>
+                    <div class="col-12">
+                      <label for="message" class="form-label">Message
+                        <span class="text-danger">*</span></label>
+                      <textarea class="form-control" id="message" name="message" rows="3"
+                        required="required"></textarea>
+                    </div>
+                    <div class="col-12">
+                      <div class="d-grid"><br>
+                        <button class="btn btn-primary btn-lg" type="submit">Send Message</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <br>
+          <ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+            <li class="ftco-animate normal-txt">Find me on
+            </li>
+            <!-- <li class="ftco-animate"> <a href="https://www.youtube.com/@RishabhMishraOfficial"> <span class="icon-youtube"></span></a> </li> -->
+            <li class="ftco-animate">
+              <a href="https://www.linkedin.com/in/aditiup29/">
+                <span class="icon-linkedin"></span></a>
+            </li>
+            <!-- <li class="ftco-animate"> <a href="https://twitter.com/rishabhnmishra"> <span class="icon-facebook"></span></a> </li> -->
+            <li class="ftco-animate">
+              <a href="https://www.instagram.com/aditiupadhyay02/">
+                <span class="icon-instagram"></span></a>
+            </li>
+          </ul>
+          <br>
+        </div>
+      </div>
+  </section>
+
+  <footer class="ftco-footer ftco-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+
+          <p style="display: none;">
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            All rights reserved | This template is made with
+            <i class="icon-heart color-danger" aria-hidden="true"></i>
+            by
+            <a href="https://colorlib.com" target="_blank">Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen">
+    <svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+        stroke="#F96D00" />
+    </svg>
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+
+  <script src="js/main.js"></script>
+  <script>
+    function gitClick() {
+      window.location.href = 'https://github.com/Aditi217';
+    }
+  </script>
+
+</body>
+
+</html>

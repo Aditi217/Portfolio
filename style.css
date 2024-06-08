@@ -1,0 +1,35 @@
+/* General Styles */
+.one-forth {
+    width: 60%; /* Adjust as necessary */
+    padding: 20px;
+    text-align: center; /* Center-align text */
+  }
+  
+  .one-third {
+    width: 40%; /* Adjust as necessary */
+    padding: 20px;
+    text-align: center; /* Center-align text */
+  }
+  
+  .one-forth .text, .one-third .text {
+    position: relative;
+  }
+  
+  #typing-animation {
+    display: inline-block;
+    font-weight: bold;
+    color: #000; /* Adjust color as needed */
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .one-forth, .one-third {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .one-third {
+      margin-bottom: 20px;
+    }
+  }
+  
